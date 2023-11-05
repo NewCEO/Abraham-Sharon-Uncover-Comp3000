@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  background-color: #f4f4f4;
+  color-scheme: light;
+}
+
+html {
+  font-family: var(--font-ramblerBook);
+}
+
+h1 {
+  font-family: var(--font-ramblerBold);
+  text-transform: uppercase;
+  color: #104b53;
+}
+
+.secondaryColor {
+  color: #FAD9B8;
+}
+
+.primaryColor {
+  color: #104b53;
+}
+
+button {
+  font-family: var(--font-ramblerBold);
+  border-radius: 8px;
+}
+
+.ramblerSemibold{
+  font-family: var(--font-ramblerSemiBold);
+}
+
+.ramblerBook{
+  font-family: var(--font-ramblerBook);
+}
+
+.font-h1-weight {
+  font-family: var(--font-ramblerBold);
+  
+}
+
+/*for parallax scrolling*/
+.no-scroll-animation {
+  scroll-behavior: auto; /* Reset scroll behavior to default */
+  overflow-y: scroll !important; /* Allow vertical scrolling */
+  overflow-x: hidden !important; /* Hide horizontal scrolling */
+  overscroll-behavior-y: none !important; /* Disable overscroll on Y-axis */
+  overscroll-behavior-x: none !important; /* Disable overscroll on X-axis */
+}
+
+.no-scroll-animation * {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+
+
